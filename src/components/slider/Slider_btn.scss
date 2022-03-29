@@ -1,0 +1,17 @@
+.btn__slider{
+  color: white;
+  background: none;
+  border:0;
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  font-size: 2rem;
+
+  &.prev{
+    left: 0;
+  }
+
+  &.next{
+    right: 0;
+  }
+}

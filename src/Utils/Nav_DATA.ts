@@ -1,0 +1,22 @@
+export const Navdata = [
+  {
+    id:1,
+    title:'Home',
+    route:'/'
+  },
+  {
+    id:2,
+    title:'About',
+    route:'/about'
+  },
+  {
+    id:3,
+    title:'Popular',
+    route:'/popular'
+  },
+  {
+    id:4,
+    title:'Featured',
+    route:'/featured'
+  }
+]

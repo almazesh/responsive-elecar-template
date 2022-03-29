@@ -1,0 +1,22 @@
+.slider__parent{
+  height: 25vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .slider__img{
+    width: 100%;
+    object-fit: contain;
+    justify-self: center;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    transition: .3s ease-in-out;
+    @media screen and (min-width:495px) {
+      width: 350px;
+      
+    }
+    &.active{
+      opacity: 1;
+    }
+  }
+}

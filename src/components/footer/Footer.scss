@@ -1,0 +1,40 @@
+.footer{
+  position: relative;
+  overflow: hidden;
+  .footer__container{
+    row-gap: 2.5rem;
+    position: relative;
+    .footer__logo{
+      display: inline-flex;
+      align-items: center;
+      column-gap: .25rem;
+      color: $title-color;
+      font-size: $h2-fontSize;
+      font-weight: $font-semi-bold;
+      margin-bottom: 1.25rem;
+      transition: .3s;
+      i{
+        font-size: 1.5rem;
+        &:hover{
+          color: $first-color;
+        }
+      }
+    }
+
+    .footer__title{
+      font-size: $h3-fontSize;
+      margin-bottom: 1.25rem;
+
+    }
+
+    .footer__links{
+      display: flex;
+      flex-direction: column;
+      row-gap: .5rem;
+      .footer__social-links{
+        color: $title-color;
+        transition: .3s;
+      }
+    }
+  }
+}

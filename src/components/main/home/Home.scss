@@ -1,0 +1,122 @@
+.home{
+  position: relative;
+  overflow: hidden;
+  
+  .shape{
+    &.shape__big{
+      width: 400px;
+      height: 400px;
+      left: -9rem;
+      top: -4rem;
+    }
+
+    &.shape__small{
+      width: 300px;
+      height: 300px;
+      bottom: 3rem;
+      right: -10rem;
+    }
+  }
+  .home__container{
+    position: relative;
+    padding-top: 4rem;
+    row-gap: 3rem;
+    @media screen and (min-width:1040px)  {
+      padding-top: 2rem;
+    }
+    .home__data{
+      text-align: center;
+      .home__title{
+        font-size: $h1-fontSize;
+        margin-bottom: 1rem ;
+      }
+      .home__elec{
+        font-size: $small-fontSize;
+        font-weight: 400;
+        color: $text-color;
+        display: inline-flex;
+        align-items: center;
+        column-gap: .25rem;
+        i{
+          color: $first-color;
+        } 
+      }
+
+    }
+
+    .home__car{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 4rem;
+      margin-bottom: 2rem;
+      @media screen and (max-width:320px) {
+        column-gap: 2rem;
+      }
+      @media screen and (min-width:1040px)  {
+        column-gap: 7rem;
+      }
+      .home__car-data{
+        text-align: center;
+        .home__car-name{
+          font-size: .625rem;
+          font-weight: 400;
+          color: $text-color;
+        }
+        .home__car-number{
+          font-size: $h2-fontSize;
+          font-weight: $font-medium;
+          margin-bottom: .25rem;
+        }
+        .home__car-icon{
+          background-color: $container-color;
+          border-radius: 50%;
+          padding: .376rem; 
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          font-size: .876rem;
+          margin-bottom: .75rem;
+          @media screen and (min-width:1040px)  {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+    .home__button{
+      position: relative;
+      border:2px solid $first-color-alt;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-self: center;
+      font-size: $small-fontSize;
+      color: $white-color;
+      
+      font-weight: $font-medium;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        border:2px solid $first-color-alt;
+        border-radius: 50%;
+        box-shadow: 0 0 12px $first-color-alt;
+        transition: .3s;
+        animation: button 2s infinite linear;
+        @keyframes button {
+          0%{
+            box-shadow: 0 0 12px $first-color-alt;
+          }50%{
+            box-shadow: 0 0 24px $first-color-alt;
+          }
+        }
+      }
+    }
+  }
+}
+ 

@@ -1,0 +1,53 @@
+.about__container{
+  row-gap: 6rem;
+  @media screen and (min-width:767px) {
+    grid-template-columns: repeat(2,1fr);
+  }
+  @media screen and (min-width:1040px)  {
+    column-gap: 6rem;
+    align-items: center;
+  }
+  .about__group{
+    position: relative;
+
+    .about__img{
+      width: 100%;
+      border-radius: .5rem;
+    }
+    .about__card{
+      width: 180px;
+      position: absolute;
+      right: 0;
+      bottom: -2.5rem;
+      background-color:hsla(0 , 0%,100%,.1);
+      backdrop-filter: blur(16px);
+      padding: 1rem .75rem;
+      text-align: center;
+      border-radius: 1.25rem;
+      .about__card-title{
+        font-size: $h3-fontSize;
+        margin-bottom: .5rem;
+      }
+      .about__card-description{
+        font-size: $small-fontSize;
+
+      }
+    }
+  }
+  .about__data{
+    .about__title{
+      text-align: initial;
+      margin-bottom: 2rem;
+    }
+    .about__description{
+      margin-bottom: 2rem;
+      @media screen and (min-width:1040px)  {
+        padding-right: 4rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+
+

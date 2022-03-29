@@ -1,0 +1,20 @@
+export const Servicelist = [
+  {
+    id:1,
+    icon:'ri-temp-cold-line',
+    number:24,
+    name:'TEMPERATURE'
+  },
+  {
+    id:2,
+    icon:'ri-dashboard-3-line',
+    number:873,
+    name:'MILEAGE'
+  },
+  {
+    id:3,
+    icon:'ri-flashlight-fill',
+    number:94,
+    name:'BATTERY'
+  }
+]

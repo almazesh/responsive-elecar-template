@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap');
+
+
+//================ Variables CSS ================
+
+$header-height:3.5rem;
+
+// ======================= Colors =======================
+
+$first-color:hsl(219,69%,56%);
+$first-color-alt:hsl(219,69%,52%);
+$title-color:hsl(219,8%,95%);
+$text-color:hsl(219 ,8% , 75%);
+$text-color-light:hsl(219,4%,55%);
+$white-color:#fff;
+$body-color:hsl(219,4%,4%);
+$container-color:hsl(219,4%,7%);
+
+
+// ============ Font and Typography -------------
+//  .5rem = 8px | 1rem = 16px
+
+$body-font:'Exo', sans-serif;
+$h1-fontSize:1.5rem;
+$h2-fontSize:1.25rem;
+$h3-fontSize:1rem;
+$normal-fontSize:.938rem;
+$small-fontSize:.813rem;
+$smaller-fontSize:.75rem;
+
+
+// ================ Font-weight ============== 
+
+
+$font-medium:500;
+$font-semi-bold:600;
+
+
+
+// ================== z-index =======================
+
+
+$z-tooltip:10;
+$z-fixed:100;
+
+// ====================== Responsive Typography ===================
+
+
+@media screen and (min-width:968px){
+    $h1-fontSize:2.25rem;
+    $h2-fontSize:1.5rem;
+    $h3-fontSize:1.25rem;
+    $normal-fontSize:1rem;
+    $small-fontSize:.875rem;
+    $smaller-fontSize:.813rem;
+}
+
+
+
+//  =====================  Base ================== 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $body-font;
+    font-size: $normal-fontSize;
+    background: $body-color;
+    color: $text-color;
+}
+
+
+h1, h2 , h3{
+    color: $title-color;
+    font-weight: $font-semi-bold;
+}
+
+ul{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+// ============== Reusable CSS Classess =============
+
+
+.container{
+    max-width: 1024px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    @media screen and (min-width:1040px)  {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.grid{
+    display: grid;
+    gap:1.5rem;
+}
+
+.section{
+    padding: 4.5rem 0 2rem;
+    @media screen and (min-width:767px) {
+        padding: 7rem 0 2rem;
+    }
+}
+
+.section__title{
+    font-size: $h2-fontSize;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.main{
+    overflow: hidden;
+}
+
+
+
+
+.shape{
+  background-color: hsl(219,33%,32%);
+  filter: blur(112px);
+  border-radius: 50%;
+  position: absolute;
+  
+}
+
+// ================== button =================
+
+
+
+.button{
+    display: inline-block;
+    background-color: $first-color;
+    color: $white-color;
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    border:0;
+    font-size: $normal-fontSize;
+    transition: .3s;
+    &:hover{
+      background-color: $first-color-alt;
+    }
+  }
+
+
+
+
+// =============  Scrollbar ==================
+
+
+
+
+
+
+
+
+
+// ================== Header && NAV ====================
+
+
+@import './components/header/Header.scss';
+
+
+
+// ======================= HOME =======================
+
+
+
+@import './components/main/home/Home.scss';
+
+
+
+// ==================== About ========================
+
+
+@import './components/main/about/About.scss';
+
+
+// ===================== Popular ===================
+
+
+@import './components/main/popular/Popular.scss';
+
+
+// ======================= Features ==================== 
+
+
+@import './components/main/features/Features.scss';
+
+
+
+// ========================= Offers ===========================
+
+@import './components/main/offer/Offer.scss';
+
+
+
+// ================== Logos =====================
+
+
+@import './components/main/logos/Logos.scss';
+
+
+
+// ==================== Foooter ================
+
+
+@import './components/footer/Footer.scss';
+
+
+
+
+
+
+// =====================  MEdia -====================
+
+
+@media screen and (max-width:320px) {
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    
+}
